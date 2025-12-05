@@ -1,0 +1,76 @@
+:root {
+    --color-primary-dark: #31261A;
+    --color-primary-light: #FAF4EA;
+    --color-brand-dark: #465929;
+    --color-brand-light: #819B57;
+}
+
+/* ----------------GLOBAL STYLES---------------- */
+
+body {
+    color: var(--color-primary-dark);
+}
+
+ul {
+    list-style: none;
+}
+
+/* ----------------BUTTON---------------- */
+
+.button {
+    color: var(--color-primary-light);
+    background-color: var( --color-brand-light);
+    border-color: 2px solid var( --color-brand-light);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--color-brand-dark);
+    border-color: 2px solid var( --color-brand-light);
+}
+
+/* ----------------LINKS---------------- */
+
+.link {
+    text-decoration: none;
+    color: var(--color-primary-light);
+}
+
+.link:hover {
+    color: var( --color-brand-light);
+}
+
+
+.section-titel .accent {
+    color: var( --color-brand-dark);
+}
+
+/* ----------------HEADER---------------- */
+
+/* ----------------HERO---------------- */
+
+.hero-titel {
+    color: var(--color-primary-light);
+}
+
+.hero-titel .accent {
+    color: var( --color-brand-light);
+}    
+
+.advantages-list {
+    color: var(--color-primary-light);
+    background-color: var( --color-brand-light);
+
+}
+
+
+
+/* ----------------TRADITIONS---------------- */
+
+/* ----------------CHIEF COOKERS---------------- */
+
+/* ----------------FORMATS---------------- */
+
+/* ----------------CONTACTS---------------- */
