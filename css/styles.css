@@ -40,7 +40,9 @@
 
 /* ----------------GLOBAL STYLES---------------- */
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -64,6 +66,11 @@ p {
   margin-top: 0;
 }
 
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -83,6 +90,12 @@ address {
 
 .section {
   padding: 48px 0;
+}
+
+.section-title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.3;
 }
 
 .visually-hidden {
@@ -230,15 +243,34 @@ address {
 
 /* ----------------CHEF---------------- */
 
+.chefs-title {
+  min-width: 520px;
+  margin: 0 auto 80px;
+}
+
+.chef-text p {
+  margin-bottom: 24px;
+}
+
+.chef-list {
+  display: flex;
+  gap: 40px 30px;
+  flex-wrap: wrap;
+}
+
+.chef-item {
+  flex-basis: calc(100% / 2 - 30px);
+}
+
+.chef-card {
+  display: flex;
+  gap: 30px;
+}
+
 .chef-photo {
   border-radius: 4px 4px 4px 200px;
   box-shadow: -16px 16px 0 0 var(--color-primary-light),
     -16px 16px 0 2px var(--color-secondary-dark);
-}
-
-.chefs-title {
-  min-width: 520px;
-  margin: 0 auto 80px;
 }
 
 .chefs-title::after,
@@ -277,6 +309,12 @@ address {
 }
 /* ----------------FORMATS---------------- */
 
+.formats-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
 .formats-title {
   margin-bottom: 80px;
 }
@@ -312,18 +350,52 @@ address {
 
 /* ----------------CONTACTS---------------- */
 
+.contacts-section {
+  padding-bottom: 96px;
+}
+
+.contacts-container {
+  display: flex;
+  gap: 32px;
+}
+
 .contacts-title {
   margin-bottom: 16px;
+}
+
+.contacts-map {
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: none;
 }
 
 /* ----------------FOOTER---------------- */
 
 .footer {
+  padding: 32px 0;
   background-color: var(--color-primary-dark);
   background-image: url(/images/footer-background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: space-between;
 }
 
 .address-link {
