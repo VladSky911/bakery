@@ -7,7 +7,7 @@
     <title>Сучасна пекарня</title>
 
     <!-- /----------Styles----------/ -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -44,8 +44,6 @@
         </div>
       </section>
 
-      <!-- /----------Sections----------/ -->
-
       <section class="advantages-section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
@@ -56,6 +54,8 @@
           </ul>
         </div>
       </section>
+
+      <!-- /----------Sections----------/ -->
 
       <section class="traditions-section section" id="traditions-section">
         <div class="container">
@@ -151,6 +151,11 @@
             <ul class="formats-list">
               <li>
                 <article class="format-card">
+                  <img
+                    class="format-img"
+                    src="./images/walrus-format.jpg"
+                    alt=""
+                  />
                   <h3 class="format-title" lang="eng">Walrus</h3>
                   <div class="format-text">
                     <p>Площа: до 120 м2</p>
@@ -165,6 +170,11 @@
               </li>
               <li>
                 <article class="format-card">
+                  <img
+                    class="format-img"
+                    src="./images/Horseshoe-format.jpg"
+                    alt=""
+                  />
                   <h3 class="format-title" lang="eng">Horseshoe</h3>
                   <div class="format-text">
                     <p>Площа: до 25 м2</p>
@@ -176,6 +186,11 @@
               </li>
               <li>
                 <article class="format-card">
+                  <img
+                    class="format-img"
+                    src="./images/Handlebar-format.jpg"
+                    alt=""
+                  />
                   <h3 class="format-title" lang="eng">Handlebar</h3>
                   <div class="format-text">
                     <p>Площа: до 15 м2</p>
@@ -336,14 +351,14 @@
       </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn-close" data-modal-close>
           ✕
         </button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <form name="modal-form" autocapitalize="off" novalidate>
+        <form name="modal-form" autocapitalize="on">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name"
               >Ім’я</label
@@ -354,6 +369,9 @@
               id="user-name"
               name="user-name"
               placeholder="Ім’я"
+              minlength="2"
+              maxlength="20"
+              required
             />
           </div>
 
@@ -367,6 +385,8 @@
               id="user-tel"
               name="user-tel"
               placeholder="Телефон"
+              pattern="”^\+[0-9]{12}”"
+              required
             />
           </div>
 
@@ -380,10 +400,11 @@
               id="user-email"
               name="user-email"
               placeholder="Електронна пошта"
+              required
             />
           </div>
 
-          <button class="form-button button" type="submit">
+          <button class="form-button button" type="submit" disabled>
             Замовити дзвінок
           </button>
           <p class="form-terms">

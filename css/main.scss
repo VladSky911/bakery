@@ -1,0 +1,21 @@
+@use "../scss/base";
+
+@use "../scss/utils/fonts";
+@use "../scss/utils/utils";
+@use "../scss/utils/container";
+
+@use "../scss/utils/variabels";
+
+@use "../scss/components/buttons";
+@use "../scss/components/links";
+@use "../scss/components/section";
+@use "../scss/components/hero";
+@use "../scss/components/traditions-section";
+@use "../scss/components/chefs-section";
+@use "../scss/components/formats";
+@use "../scss/components/contacts";
+@use "../scss/components/modal";
+@use "../scss/components/form";
+
+@use "../scss/layout/header";
+@use "../scss/layout/footer";

@@ -1,0 +1,44 @@
+.hero-section {
+  padding: 272px 0;
+  background-color: wheat;
+  background-image: linear-gradient(
+      102.76deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+    url(/images/hero-section-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.hero-titel {
+  margin-bottom: 0;
+  color: var(--color-primary-light);
+  text-align: center;
+  font-size: 128px;
+  font-weight: 700;
+}
+
+.hero-titel .accent {
+  color: var(--color-brand-normal);
+}
+
+.advantages-section {
+  padding: 16px 0;
+  background-color: var(--color-brand-normal);
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.advantages-item {
+  font-size: 20px;
+  font-weight: 300;
+  margin-right: 60px;
+  color: var(--color-primary-light);
+}
