@@ -164,13 +164,19 @@ address {
 .hero-section {
   padding: 272px 0;
   background-color: wheat;
-  background-image: linear-gradient(102.76deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url(/images/hero-section-background.jpg);
+  background-image: linear-gradient(
+      102.76deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+    url(/images/hero-section-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
 }
 
-.hero-titel {
+.hero-title {
   margin-bottom: 0;
   color: var(--color-primary-light);
   text-align: center;
@@ -178,16 +184,10 @@ address {
   font-weight: 700;
 }
 
-.hero-titel .accent {
+.hero-title .accent {
   color: var(--color-brand-normal);
 }
 
-/* ----------------COLOR VARIABLES---------------- */
-/* ----------------BASE---------------- */
-/* ----------------BUTTON---------------- */
-/* ----------------LINKS---------------- */
-/* ----------------HEADER---------------- */
-/* ----------------HERO---------------- */
 .advantages-section {
   padding: 16px 0;
   background-color: var(--color-brand-normal);
@@ -293,7 +293,8 @@ address {
 
 .chef-photo {
   border-radius: 4px 4px 4px 200px;
-  box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-secondary-dark);
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 2px var(--color-secondary-dark);
 }
 
 /* ----------------CAROUSEL---------------- */
@@ -334,7 +335,12 @@ address {
 .format-card {
   width: 349px;
   height: 444px;
-  background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark) 100%);
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    var(--color-primary-dark) 100%
+  );
   padding: 24px;
   border-radius: 16px;
   box-shadow: 0 0 10px rgba(169, 169, 169, 0.2);
@@ -541,4 +547,4 @@ address {
 .form-terms-link {
   color: var(--color-primary-dark);
   text-underline-offset: 2px;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

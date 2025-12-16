@@ -1,0 +1,26 @@
+@use "../scss/base";
+@use "../scss/utils/variabels";
+
+@use "../scss/utils/fonts";
+@use "../scss/utils/texts";
+@use "../scss/utils/utils";
+@use "../scss/utils/container";
+
+@use "../scss/components/buttons";
+@use "../scss/components/modal";
+@use "../scss/components/chef-card";
+@use "../scss/components/carousel-button";
+@use "../scss/components/format-card";
+@use "../scss/components/form-terms";
+@use "../scss/components/input";
+@use "../scss/components/links";
+
+@use "../scss/layout/header";
+@use "../scss/layout/section";
+@use "../scss/layout/hero";
+@use "../scss/layout/advantages-section";
+@use "../scss/layout/traditions-section";
+@use "../scss/layout/chefs-section";
+@use "../scss/layout/formats-section";
+@use "../scss/layout/contacts-section";
+@use "../scss/layout/footer";
