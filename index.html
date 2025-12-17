@@ -34,11 +34,16 @@
           >
             Замовити дзвінок
           </button>
-          <!-- <button class="header__burger" type="button">
-            <svg class="address-icon" width="24" height="24">
+          <button class="header__burger is-open menu-btn-open" type="button">
+            <svg width="24" height="24">
               <use href="/images/icons.svg#icon-burger-menu-1"></use>
             </svg>
-          </button> -->
+          </button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              ✕
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -50,6 +55,13 @@
           <h1 class="hero-section__titel">
             <span class="text-brand">Сучасна</span> пекарня
           </h1>
+          <button
+            class="hero-section__button button modal-btn-open"
+            type="button"
+            data-modal-open
+          >
+            Замовити дзвінок
+          </button>
         </div>
       </section>
 
@@ -375,13 +387,17 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-btn-close" data-modal-close>
+        <button
+          type="button"
+          class="modal-btn-close modal__btn-close"
+          data-modal-close
+        >
           ✕
         </button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
         <form name="modal-form" autocapitalize="on">
-          <div class="form-field">
+          <div class="modal__form-field">
             <label class="input__label visually-hidden" for="user-name"
               >Ім’я</label
             >
@@ -397,7 +413,7 @@
             />
           </div>
 
-          <div class="form-field">
+          <div class="modal__form-field">
             <label class="input__label visually-hidden" for="user-tel"
               >Телефон</label
             >
@@ -412,7 +428,7 @@
             />
           </div>
 
-          <div class="form-field">
+          <div class="modal__form-field">
             <label class="input__label visually-hidden" for="user-email"
               >Електронна пошта</label
             >
@@ -426,10 +442,10 @@
             />
           </div>
 
-          <button class="form-button button" type="submit" disabled>
+          <button class="modal__button button" type="submit" disabled>
             Замовити дзвінок
           </button>
-          <p class="form-terms">
+          <p class="modal bottom-text">
             Натискаючи на кнопку я погоджуюсь
             <a class="form-terms__link" href="#"
               >з політикою конфіденційності</a
@@ -440,6 +456,7 @@
     </div>
 
     <!-- /----------Scripts----------/ -->
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

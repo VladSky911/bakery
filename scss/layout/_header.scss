@@ -3,7 +3,12 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 32px;
+  padding-top: 16px;
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 32px;
+    padding-left: 103px;
+  }
 
   &__container {
     display: flex;
@@ -20,27 +25,34 @@
   }
 
   &__menu {
-    display: flex;
-    gap: 64px;
-    flex-grow: 1;
-    justify-content: center;
+    display: none;
 
-    @media screen and (max-width: 1280px) {
-      display: none;
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      gap: 64px;
+      flex-grow: 1;
+      justify-content: center;
     }
   }
 
   &__button {
-    @media screen and (max-width: 1280px) {
-      display: none;
+    display: none;
+
+    @media screen and (min-width: 1280px) {
+      display: block;
     }
   }
 
   &__burger {
-    display: none;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    fill: var(--color-primary-light);
 
-    @media screen and (max-width: 1280px) {
-      display: block;
+    @media screen and (min-width: 1280px) {
+      display: none;
     }
   }
 }

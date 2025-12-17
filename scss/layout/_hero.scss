@@ -1,5 +1,5 @@
 .hero-section {
-  padding: 272px 0;
+  padding: 124px 0;
   background-color: wheat;
   background-image: linear-gradient(
       102.76deg,
@@ -12,11 +12,30 @@
   background-size: cover;
   background-position: center top;
 
+  @media screen and (min-width: 1280px) {
+    padding: 272px 0;
+  }
+
   &__titel {
-    margin-bottom: 0;
+    margin-bottom: 48px;
     color: var(--color-primary-light);
     text-align: center;
-    font-size: 128px;
+    font-size: 67px;
+    line-height: 1;
     font-weight: 700;
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 0;
+      font-size: 128px;
+      line-height: 1.5;
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
+
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
   }
 }
