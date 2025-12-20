@@ -1,4 +1,5 @@
 .footer {
+  text-align: center;
   padding: 32px 0;
   background-color: var(--color-primary-dark);
   background-image: url(/images/footer-background.png);
@@ -6,6 +7,10 @@
   background-size: cover;
   background-position: center;
   position: relative;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 
   &::before,
   &::after {
@@ -24,27 +29,43 @@
 
   &::after {
     width: 380px;
-    height: 190px;
+    height: 180px;
     right: 0;
     background-image: url(/images/decor-bread-large.png);
   }
 
   &__container {
     display: flex;
+    flex-direction: column;
     gap: 20px;
-  }
 
-  &__logo,
-  &__menu {
-    flex-basis: 50%;
-    gap: 20px;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
   }
 
   &__nav,
   &__address {
     display: flex;
-    flex-basis: 50%;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 24px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-basis: 50%;
+    }
+  }
+
+  &__logo,
+  &__menu {
+    flex-grow: 1;
+  }
+
+  &__address-contacts {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 2rem;
   }
 
   &__address-link {
