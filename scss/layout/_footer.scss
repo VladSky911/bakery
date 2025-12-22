@@ -20,18 +20,45 @@
     content: "";
   }
 
-  &::before {
-    width: 180px;
-    height: 120px;
-    left: 0;
-    background-image: url(/images/decor-bread-small.png);
+  // &::after {
+  //   width: 196px;
+  //   top: 48px;
+  //   left: 0;
+  //   background-image: url(/images/bread-mob-left.png);
+  // }
+
+  // &::before {
+  //   width: 180px;
+  //   height: 120px;
+  //   right: 0;
+  //   background-image: url(/images/bread-mob-right.png);
+  // }
+
+  @media screen and (min-width: 768px) {
+    &::before {
+      width: 112px;
+      height: 120px;
+      left: 260px;
+      background-image: url(/images/decor-bread-small.png);
+    }
   }
 
-  &::after {
-    width: 380px;
-    height: 180px;
-    right: 0;
-    background-image: url(/images/decor-bread-large.png);
+  @media screen and (min-width: 768px) {
+    &::after {
+      width: 380px;
+      height: 180px;
+      right: 0;
+      background-image: url(/images/decor-bread-large.png);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &::before {
+      width: 180px;
+      height: 120px;
+      left: 0;
+      background-image: url(/images/decor-bread-small.png);
+    }
   }
 
   &__container {
